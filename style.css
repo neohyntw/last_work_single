@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0 auto;
+  font-family: arial;
+  line-height: 130%;
+}
+
+
+.bar {
+  background: #ececec;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+.bar ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bar li a{
+  text-decoration:none;
+  display: flex;
+}
+
+.bar li span{
+  padding: 0 10px 0 5px;
+}
+
+.bar li:first-child span{
+  color:#4267B2;
+}
+
+.bar li:first-child span:hover{
+  color:#3B5998;
+}
+
+.bar li:last-child span{
+  color:#00acee;
+}
+
+.bar li:last-child span:hover{
+  color:#00B6F1;
+}
+
+.bar li img{
+  vertical-align:center;
+  padding-right: 0px;
+}
+
+.bar li:last-child img {
+  border-left: 1px solid grey;
+  padding-left: 10px;
+}
+
+
+
+h2{
+  font-size: 20px;
+}
+
+h1{
+  font-size: 24px;
+  line-height: 32px;
+  padding: 30px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img{
+  width: 200px;
+  height: 45px;
+}
+.header ul{
+  display: flex;
+}
+
+.header ul li a{
+  padding: 20px;
+  display:block;
+  box-sizing: border-box;
+  color: #20c997;
+  border-bottom: 4px solid #fff;
+  text-decoration: none;
+}
+
+.header ul li a:hover{
+   border-bottom: 4px solid #20c997;
+  color: #20c997;
+  cursor: pointer;
+    
+}
+
+.section-one {
+  background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  justify-content: start;
+  align-items: center;
+  
+  
+}
+
+.section-one .headline{
+  flex-grow: 1;
+}
+
+.section-one .headline h1{
+  background: rgba(25, 25, 25, .5);
+  box-sizing:border-box;
+  color: white;
+}
+
+.section-two {
+  display:flex;
+  box-sizing:border-box;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.section-two .item {
+  box-sizing: border-box;
+  border: solid 1px #ececec;
+  padding: 30px;
+  width: 31%;
+}
+
+.section-two .item h2{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.section-two .item img{
+  width: 100%;
+  margin: auto;
+}
+
+.section-three{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px 30px;
+}
+
+.section-three table{
+  width: 100%;
+  text-align:center;
+
+}
+
+.section-three table tr:first-child{
+  border-top: solid 1px #ececec;
+  border-bottom: solid 1px #ececec;
+  background: lightgray;
+}
+
+.section-three table tr:first-child th{
+  padding: 10px 0px;
+}
+
+.section-three table tr td {
+  border-bottom: solid 1px #ececec;
+  padding:10px 0;
+}
+
+.section-four{
+  background: darkgreen;
+  color: white;
+}
+
+.section-four h1{
+  text-align: center;
+}
+
+.section-four .form-container{
+  display:flex;
+  justify-content:space-evenly;
+  box-sizing: border-box;
+  padding: 0px 0 30px;
+}
+
+.section-four .form-container .blank-img{
+  width: 45%;
+  height: 200px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.section-four .form-container .blank-form{
+  width: 45%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-four .form-container .blank-form div{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+}
+
+.section-four .form-container .blank-form label{
+  font-size:14px;
+}
+
+.section-four .form-container .blank-form input{
+  font-size:16px;
+}
+
+.section-four .form-container .blank-form input[type=submit]{
+  font-size:14px;
+  width: 80px;
+  padding: 5px 0;
+  align-self: flex-end;
+  background: #20c997;
+  color:#fff;
+  border:none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.section-four .form-container .blank-form input[type=submit]:hover {
+  background:white;
+  cursor: pointer;
+   color: #20c997;
+}
+
+.footer {
+  display:flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+
+.footer img{
+ width: 200px;
+  height: 45px;
+}
+
+.footer ul {
+  display: flex;
+}
+
+.footer ul li {
+  padding: 0 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+   .section-two{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .section-two .item{
+      width: 90%;
+      margin-top: 20px ;
+    }
+
+    .section-four .form-container{
+      flex-direction: column;
+      align-items: center;
+    }
+
+     .section-four .form-container .blank-form{
+      width: 90%;
+    }
+
+    .section-four .form-container .blank-form label{
+      margin-top: 15px;
+    }
+
+    .section-four .form-container .blank-img{
+  width: 90%;}
+
+  .section-four .form-container .blank-form input[type=submit]{
+    margin-top: 20px;
+  }
+}
+
+
