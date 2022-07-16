@@ -165,26 +165,26 @@ h2{
   color: white;
 }
 
-.section-two {
+.content-item {
   display:flex;
   box-sizing:border-box;
   justify-content: space-evenly;
   padding: 20px 0;
 }
 
-.section-two .item {
+.content-item .item {
   box-sizing: border-box;
   border: solid 1px #ececec;
   padding: 30px;
   width: 31%;
 }
 
-.section-two .item h3{
+.content-item .item h3{
   text-align: center;
   padding: 10px 0;
 }
 
-.section-two .item img{
+.content-item .item img{
   width: 100%;
   margin: auto;
 }
@@ -327,12 +327,12 @@ h2{
 
 
 @media only screen and (max-width: 768px) {
-   .section-two{
+   .content-item{
     flex-direction: column;
     align-items: center;
     }
 
-    .section-two .item{
+    .content-item .item{
       width: 90%;
       margin-top: 20px ;
     }
